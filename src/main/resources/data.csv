@@ -1,0 +1,29 @@
+name, mail, phone, birth
+joy, some@example.com, 333-33333333, 1990-05-15
+sarah, no@example.com, 332-4817294, 1985-09-23
+john, john@example.com, 333-1234567, 1992-11-07
+emily, emily@example.com, 333-5678901, 1998-03-12
+michael, michael@example.com, 333-9876543, 1994-07-28
+jessica, jessica@example.com, 333-4321098, 1991-12-04
+david, david@example.com, 333-7890123, 1989-02-18
+samantha, samantha@example.com, 333-2468019, 1997-06-30
+ryan, ryan@example.com, 333-1357902, 1993-09-09
+olivia, olivia@example.com, 333-8642095, 1996-01-25
+ethan, ethan@example.com, 333-9753128, 1999-08-03
+natalie, natalie@example.com, 333-3142076, 1990-04-17
+alexander, alexander@example.com, 333-7689451, 1995-11-22
+marco,marco@example.com,3331234567,1990-06-15
+giulia,giulia@example.com,3339876543,1987-03-28
+---------,---------@--------,------------, 44444-44-44
+personWithErrors, error1@example.com, 333-ABCDE, 2000-01-01
+personWithErrors2, error2example.com, 333-1234567, 2000-01-01
+personWithErrors3, ABCD-EF-GH, 333-1234567, error3@example.com
+personWithErrors4, error4example.com, ABCDEFGHIJ, ABCD-EF-GH
+luca,luca@example.com,3332468019,1995-08-02
+elisa,elisa@example.com,3338642095,1992-11-12
+giorgio,giorgio@example.com,3339753128,1998-04-17
+valentina,valentina@example.com,3333142076,1991-09-23
+andrea,andrea@example.com,3337689451,1997-12-30
+simona,simona@example.com,3331357902,1993-05-05
+maria,maria@example.com,3334817294,1996-10-08
+paolo,paolo@example.com,3337890123,1989-07-21
