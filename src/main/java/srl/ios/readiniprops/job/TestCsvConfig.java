@@ -1,13 +1,10 @@
 package srl.ios.readiniprops.job;
 
-import jakarta.annotation.Nonnull;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
-import org.springframework.batch.item.Chunk;
-import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.support.ListItemReader;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,12 +30,9 @@ public class TestCsvConfig {
         return new StepBuilder("testCsvData", jobRepository)
                 .<String,String>chunk(10, platformTransactionManager)
                 .reader( new ListItemReader<>(Arrays.asList(lines)))
-                .writer(new ItemWriter<String>() {
-                    @Override
-                    public void write(@Nonnull Chunk<? extends String> chunk) throws Exception {
-                        var tenRows = chunk.getItems();
-                        System.out.println(tenRows);
-                    }
+                .writer(chunk -> {
+                    var tenRows = chunk.getItems();
+                    System.out.println(tenRows);
                 })
                 .build();
     }
