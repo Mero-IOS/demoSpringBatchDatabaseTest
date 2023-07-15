@@ -1,8 +1,6 @@
 package srl.ios.readiniprops.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.sql.Date;
 
@@ -23,5 +21,13 @@ public class Person {
                 ", mail='" + mail + '\'' +
                 ", birthDate=" + birthDate +
                 '}';
+    }
+    public Person(){}
+
+    public Person(String name, String mail, String phoneNumber, Date birthDate) {
+        this.name = name;
+        this.mail = mail;
+        this.phoneNumber = phoneNumber;
+        this.birthDate = birthDate;
     }
 }

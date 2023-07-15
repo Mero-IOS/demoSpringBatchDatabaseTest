@@ -1,4 +1,4 @@
-package constants;
+package srl.ios.readiniprops.constants;
 
 import lombok.experimental.UtilityClass;
 
